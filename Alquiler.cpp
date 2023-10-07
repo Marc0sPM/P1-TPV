@@ -26,3 +26,6 @@ ostream& operator<<(ostream& os, const Alquiler& alquiler) {
 	os << alquiler.fecha << " " << alquiler.coche << alquiler.días << " dia(s) por " << alquiler.getCoste() << " euros";
  	return os;
 }
+bool Alquiler:: operator<( const Alquiler& alquiler )const {
+	return días < alquiler.días;
+}

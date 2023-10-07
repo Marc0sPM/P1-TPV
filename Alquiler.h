@@ -26,7 +26,7 @@ public:
 
 	friend ostream& operator<<(ostream& os, const Alquiler& alquiler);
 
-	istream& operator<(const Alquiler& alquiler) const;
+	bool operator<(const Alquiler& alquiler) const;
 
 };
 
